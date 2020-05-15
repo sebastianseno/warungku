@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.seno.bukawarungtest.view.HomeFragment"
+        android:label="List User"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/actionUserFragment"
+            app:destination="@id/userFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.seno.bukawarungtest.view.UserFragment"
+        android:label="User"
+        tools:layout="@layout/fragment_user">
+        <argument
+            android:name="userId"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.seno.bukawarungtest.view.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_user">
+
+    </fragment>
+
+</navigation>

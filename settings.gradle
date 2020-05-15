@@ -1,0 +1,2 @@
+rootProject.name='Buka Warung Test'
+include ':app'

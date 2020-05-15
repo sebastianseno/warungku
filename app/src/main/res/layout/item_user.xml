@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="?selectableItemBackground"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"
+                android:src="@drawable/person_dummy"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    app:fontFamily="@font/inter_medium"
+                    android:id="@+id/firstNameText"
+                    android:text="hallo"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="14dp"
+                    app:fontFamily="@font/inter_medium"
+                    android:id="@+id/lastNameText"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="hallo"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emailText"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginBottom="10dp"
+                    app:fontFamily="@font/inter_medium"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="email@email.com"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
