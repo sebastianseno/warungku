@@ -29,6 +29,4 @@ abstract class BaseActivity(@LayoutRes contentLayoutId: Int) : AppCompatActivity
 
     override fun androidInjector(): AndroidInjector<Any> = androidInjector
 
-    protected inline fun <reified T : ViewModel> viewModels() = viewModels<T> { viewModelFactory }
-
 }
